@@ -1,0 +1,287 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/bootstrap-material-design//dist/css/bootstrap-material-design.css";
+@import "../../node_modules/bootstrap-material-design//dist/css/ripples.min.css";
+@import "animate.css";
+
+.register {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.register-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+.register-content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.register-form input {
+    width: 67%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.header {
+    background-color: #00BFA5;
+    padding: 20px;
+}
+.personal-data {
+    margin-top: 10px;
+}
+.time {
+    color: #00ffff;
+}
+.time .time-local {
+    margin-top: 3px;
+}
+.time span {
+    color: white;
+    display: inline-block;
+    background-color: rgba(95, 158, 160, 0.6);
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.btn-personal {
+    display: block;
+    color: #a7ffeb;
+    border: none;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.btn-personal:hover {
+    color: #fff495;
+    background-color: transparent;
+    text-decoration: none;
+}
+.btn-personal span {
+    top: 4px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.wrap-count {
+    position: relative;
+}
+.wrap-count .count {
+    display: inline-block;
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    background-color: #fb5e5e;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    line-height: 13px;
+    text-align: center;
+    font-size: 13px;
+}
+.logo {
+    text-align: center;
+    color: #a7ffeb;
+    position: relative;
+    width: 330px;
+    margin: auto;
+}
+.logo h1 {
+    z-index: 1;
+    position: relative;
+    font-size: 50px;
+}
+.logo .glyphicon-send {
+    font-size: 75px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    color: #fff495;
+}
+.main {
+    margin-top: 10px;
+}
+.main .people {
+    padding-right: 0;
+}
+.main .chat {
+    padding-left: 10px;
+}
+.main .aside {
+    padding-right: 0;
+}
+.main .panel .panel-heading {
+    border-radius: 0;
+    background-color: #00BFA5;
+    height: 38px;
+}
+.main .panel {
+    box-shadow: none;
+}
+.main .panel-primary {
+    margin-bottom: 10px;
+}
+.main .panel-body {
+    height: 320px;
+    overflow: auto;
+}
+.chat .wrap-count .count {
+    top: -1px;
+    right: -20px;
+    color: #fff;
+    line-height: 18px;
+}
+.chat .panel-heading {
+    padding: 0;
+}
+.panel-heading ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.panel-heading ul li {
+    display: inline-block;
+    height: 100%;
+}
+.panel-heading ul li .btn{
+    margin: 0;
+    font-size: 16px;
+    text-transform: none;
+    padding: 8px 30px;
+    height: 100%;
+    display: block;
+}
+.chat .panel-heading .btn  {
+    color: #a7ffeb;
+    transition: background, 0.5s;
+    position: relative;
+}
+.chat .panel-heading .btn:hover {
+    background-color: #39aba2;
+}
+.chat .panel-heading .active .btn {
+    background-color: #39aba2;
+}
+.count-msg {
+    color: #fff495;
+}
+.tab-control li {
+    position: relative;
+}
+.icon-close {
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+.icon-close img {
+    display: block;
+}
+.list-group .list-group-item .list-group-item-heading {
+    font-size: 16px;
+    font-weight: bold;
+}
+.panel-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+.panel-body ul li {
+    margin-bottom: 5px;
+}
+.panel-body .glyphicon-user {
+    padding-right: 7px;
+    color: #00bfa5;
+}
+.panel-body .user-offline {
+    color: #c0c0c0;
+}
+.user-offline .glyphicon-user {
+    color: #c0c0c0;
+}
+.form {
+    background-color: #fff;
+    padding: 20px;
+}
+.people .form-group {
+    margin: 7px 0 0 0;
+}
+.people .form-group input {
+    font-weight: bold;
+}
+.form .form-group {
+    margin: 0;
+    position: relative;
+}
+.form .form-group .btn {
+    position: absolute;
+    right: 0;
+    bottom: -31px;
+}
+.form .form-group .btn:focus {
+    outline: none;
+}
+.form .text-formatting .btn {
+    margin: 0;
+    padding: 4px 18px;
+    text-transform: capitalize;
+}
+.btn-bold {
+    font-weight: bold;
+}
+.btn-italic {
+    font-style: italic;
+}
+.btn-underline {
+    text-decoration: underline;
+}
+.info ul {
+    list-style: none;
+    background-color: #fff;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .main .chat {
+        padding-left: 15px;
+    }
+    .main .aside {
+        padding-right: 15px;
+    }
+    .people {
+        margin-top: 10px;
+    }
+    .people .panel-body {
+        height: 120px;
+    }
+}
+.modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/*.modale {
+    max-width: 500px;
+    height: auto;
+    padding: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -250px;
+}*/

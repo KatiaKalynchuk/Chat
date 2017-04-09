@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="register animated">
+    <div class="register-wrap">
+        <div class="register-content">
+            <div class="form-group label-placeholder register-form">
+            <label for="i5p" class="control-label">label-placeholder</label>
+            <input type="email" class="form-control" id="i5p">
+            <button href="javascript:void(0)" class="btn btn-raised btn-primary">Отправить</button>
+        </div>
+        <div class="register-alert">
+
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <header class="header">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="time">
+                    <div class="time-online">
+                        You are online for: <span id="tm">00:00:00</span>
+                    </div>
+                    <div class="time-local">
+                        Your local time is: <span id="time-local">00:00</span>
+                    </div>
+                </div>
+                <div class="personal-data">
+                    <a href="javascript:void(0)" class="btn-personal">
+                        Edit personal info
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a href="javascript:void(0)" class="btn-personal">
+                        Private messages
+                        <span class="wrap-count glyphicon glyphicon-envelope">
+                            <span class="count">3</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="logo">
+                    <h1 class="logo-title">FlyChat</h1>
+                    <span class="glyphicon glyphicon-send"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="row">
+            <div class="chat col-md-9 col-md-push-3">
+                <div class="chat-window">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <ul class="tab-control">
+                                <li class="active">
+                                    <a class="btn btn-warning" href="#main-chat" data-toggle="tab">Main chat</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-warning" href="#personal-chat" data-toggle="tab">
+                                        John Snow <span class="count-msg">(3)</span>
+                                    </a>
+                                    <span class="icon-close">
+                                        <img src="img/close.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-body">
+                            <!-- Tab panes -->
+                            <div class="tab-content" id="tab-content">
+                                <div class="tab-pane active" id="main-chat">
+                                    <div class="list-group">
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="personal-chat">
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <div class="row-content">
+                                                <div class="least-content">15m</div>
+                                                <h4 class="list-group-item-heading">John Snow</h4>
+
+                                                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row-content">
+                                                <div class="least-content">10m</div>
+                                                <h4 class="list-group-item-heading">Andrew Simpson</h4>
+                                                <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-massege">
+                    <form class="form" action="">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" id="textArea" placeholder="Write your massege"></textarea>
+                            <button id="a" type="button" class="btn btn-fab btn-fab-mini send-message">
+                                <span><img src="img/send-icon.svg" alt=""></span>
+                            </button>
+                        </div>
+                        <div class="text-formatting">
+                            <button class="btn btn-raised btn-default btn-bold">B</button>
+                            <button class="btn btn-raised btn-default btn-italic">I</button>
+                            <button class="btn btn-raised btn-default btn-underline">U</button>
+                            <button class="btn btn-raised btn-default btn_link">Link</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="aside col-md-3 col-md-pull-9">
+                <div class="people">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Online <span id="onlineElem"></span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group label-floating">
+                                <label class="control-label" for="focusedInput1">Write your nickname</label>
+                                <input class="form-control" id="focusedInput1" type="text">
+                            </div>
+                            <ul id="list-people">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><span id="allCharCount">0</span> characters entered</li>
+                        <li><span id="txtCharCount">0</span> letters entered</li>
+                        <li><span id="whitespaceCharCount">0</span> whitespace characters entered</li>
+                        <li><span id="punctuationCharCount">0</span> punctuation marks entered</li>
+                        <li><span id="phonenumbers">0</span> phone numbers entered</li>
+                    </ul>
+                </div>
+                <div id="displayMoment"></div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
